@@ -1,0 +1,66 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  /* working with flexbox easier */
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lora", serif;
+}
+/* basic styling */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* Gradient background css */
+  background: hsla(42, 93%, 57%, 1);
+  background: radial-gradient(
+    circle,
+    hsla(42, 93%, 57%, 1) 0%,
+    hsla(358, 78%, 62%, 1) 100%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(42, 93%, 57%, 1) 0%,
+    hsla(358, 78%, 62%, 1) 100%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(42, 93%, 57%, 1) 0%,
+    hsla(358, 78%, 62%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7BA2C", endColorstr="#EA5459", GradientType=1 );
+}
+
+/* stylying the weather class */
+.weather {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+/* style the location */
+#location {
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+}
+.desc {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+/* to create the circle between the two temperatures, */
+.circle {
+  background-color: black;
+  border-radius: 50px;
+  height: 15px;
+  width: 15px;
+  margin: 0 15px;
+}
